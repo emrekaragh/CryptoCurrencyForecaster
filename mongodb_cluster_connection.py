@@ -5,7 +5,7 @@ client = MongoClient(uri,
                      tls=True,
                      tlsCertificateKeyFile='emre_X509-cert-7315245080984398576.pem')
 
-db = client['testDB']
-collection = db['testCol']
+db = client['sample_airbnb']
+collection = db['listingsAndReviews']
 doc_count = collection.count_documents({})
 print(doc_count)
